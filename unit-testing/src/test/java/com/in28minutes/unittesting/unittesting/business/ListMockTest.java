@@ -1,4 +1,4 @@
-package com.in28minutes.unittesting.unittesting.unittesting.business;
+package com.in28minutes.unittesting.unittesting.business;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;

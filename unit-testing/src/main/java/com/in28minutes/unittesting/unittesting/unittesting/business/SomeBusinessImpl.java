@@ -1,5 +1,8 @@
 package com.in28minutes.unittesting.unittesting.unittesting.business;
 
+import java.util.Arrays;
+import java.util.OptionalInt;
+
 import com.in28minutes.unittesting.unittesting.unittesting.data.SomeDataService;
 
 public class SomeBusinessImpl {
@@ -14,11 +17,12 @@ public class SomeBusinessImpl {
 	}
 
 	public int calculateSum(int[] data) {
-		int sum = 0;
-		for (int value : data) {
-			sum += value;
-		}
-		return sum;
+		return Arrays.stream(data).reduce(Integer::sum).orElse(0);
+		// int sum = 0;
+		// for (int value : data) {
+		// sum += value;
+		// }
+		// return sum;
 	}
 
 	public int calculateSumUsingService() {

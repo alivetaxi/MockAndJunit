@@ -1,4 +1,4 @@
-package com.in28minutes.unittesting.unittesting.unittesting.business;
+package com.in28minutes.unittesting.unittesting.business;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -11,6 +11,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import com.in28minutes.unittesting.unittesting.unittesting.business.SomeBusinessImpl;
 import com.in28minutes.unittesting.unittesting.unittesting.data.SomeDataService;
 
 @RunWith(MockitoJUnitRunner.class)
